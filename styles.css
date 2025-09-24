@@ -11,7 +11,8 @@ body{
 
 footer{
     position: relative;
-    background-image: url(footer.png);
+    /*background-image: url(assets/footer.png);*/
+    background-color: #555555;
     background-size: cover;
     height: 248px;
     margin-top: auto;
@@ -30,7 +31,7 @@ footer{
 .final-result img{
     width: 100%;
     height: 100%;
-    opacity: 0;
+    opacity: 0.5;
     object-fit: cover; /* cover entire screen */
     display: block;    /* remove inline-gap */
 }
@@ -51,4 +52,33 @@ footer{
     width: var(--wii-button-size);
     height: var(--wii-button-size);
     border-radius: 50%;
+}
+#heure_affichage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 57px;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#main_body{
+    flex: 1;
+    background-color: red;
+}
+#main_grid{
+    margin: 100px 200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.channel{
+    background-color: #ffffff;
+    z-index: 10;
+    width: 300px;
+    height: 200px;
 }
