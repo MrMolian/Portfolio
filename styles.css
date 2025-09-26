@@ -1,5 +1,5 @@
 :root{
-    --wii-button-size: 160px;
+    --wii-button-size: 175px;
 }
 body{
     
@@ -43,18 +43,17 @@ footer{
     height: var(--wii-button-size);
     border: 7px solid #60bcde;
     border-radius: 50%;
+    top: 18%;
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3); /* blur the border */
 }
 #wii_button{
     position: absolute;
-    top: 21%;
-    left: 5%;
+    left: 4.7%;
 }
 
 #mail_button{
     position: absolute;
-    top: 21%;
-    right: 4.8%;
+    right: 4.5%;
 }
 #heure_affichage{
     position: absolute;
