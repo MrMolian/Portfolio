@@ -82,6 +82,7 @@ footer {
 }
 
 .channel{
+    position: relative;
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* blur the border */
     z-index: 10;
@@ -97,4 +98,29 @@ footer {
     transition: box-shadow 0.8s ease-in-out, transform 0.8s ease-in-out;
     z-index: 11;
     transform: scale(1.05);   
+}
+
+.channel p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 0;
+    opacity: 0;
+    font-family: 'PortfolioFont', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    transition: opacity 0.8s ease-in-out;
+    z-index: 12;
+}
+.channel:hover p {
+    opacity: 1;
+}
+
+@font-face {
+    font-family: 'PortfolioFont';
+    src: url('assets/font.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
