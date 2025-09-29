@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 301">
+  <defs>
+    <clipPath id="clip" clipPathUnits="objectBoundingBox">
+      <polygon points="0,0.03 0.16,0.03 0.34,0.41 0.66,0.40 0.84,0.02 1,0.02 1,1 0,1" />
+    </clipPath>
+  </defs>
+  <!-- tracé identique mais version contour -->
+  <polygon points="0,8 316,8 657,123 1277,121 1606,7 1920,7 1920,301 0,301" 
+           fill="none" stroke="#60bcde" stroke-width="7"/>
+</svg>

@@ -12,17 +12,18 @@ body{
     background-size: cover;
 }
 
-footer{
+footer {
     position: relative;
-    background-image: url(assets/footer.png);
-    /*background-color: #60bcde;*/
-    background-size: cover;
+    background-image: url('assets/footer.png');
     height: 248px;
     margin-top: auto;
     padding: 0;
     z-index: 1;
+  
+    -webkit-clip-path: url('assets/footer.svg#clip');
+    clip-path: url('assets/footer.svg#clip');
+  }
 
-}
 
 .final-result{
     position: fixed;   /* remove from document flow */
