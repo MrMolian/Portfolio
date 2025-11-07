@@ -3,6 +3,7 @@ import { Routes, Route, Navigate } from 'react-router-dom'
 import { Home } from './pages/Home.tsx'
 import { AboutMe } from './pages/AboutMe.tsx'
 import { Projects } from './pages/Projects.tsx'
+import { Contact } from './pages/Contact.tsx'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Route path="/home" element={<Home />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/about-me" element={<AboutMe />} />
+      <Route path="/contact" element={<Contact />} />
     </Routes>
   )
 }
