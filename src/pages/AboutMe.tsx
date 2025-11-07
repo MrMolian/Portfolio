@@ -1,11 +1,12 @@
 
 import { Background } from "../ui/background/Background";
 import { NavBar } from "../ui/navigation/NavBar";
+import AsciiText from "../ui/components/AsciiText";
 export function AboutMe() {
     return (
         <Background>
             <NavBar activeWindow="about-me"/>
-            <p className="text-4xl text-white">About Me</p>
+            <AsciiText text="About Me" />
         </Background>
     );
 }

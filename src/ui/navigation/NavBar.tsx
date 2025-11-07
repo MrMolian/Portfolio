@@ -1,5 +1,6 @@
 import { LucideBadgeDollarSign, LucideHome, LucideUser, Mail } from "lucide-react"
 import { Link } from "react-router-dom"
+import ElectricBorder from "../components/ElectricalBorder";
 const windowtoicon = {
     "home" : <LucideHome />,
     "projects" : <LucideBadgeDollarSign />,
@@ -17,14 +18,22 @@ const windowtoname = {
 
 export function NavBar_Button( {windowname, state} : {windowname : string, state : boolean}){
     return (
-        <Link to={"/" + windowname} > 
-        <div className="backdrop-blur-sm backdrop-brightness-50 rounded-2xl border-2 border-white p-2">
+        <Link to={"/" + windowname} >
+        <ElectricBorder
+        color="white"
+        speed={0.5}
+        chaos={0.1}
+        thickness={2}
+        style={{ borderRadius: 20, padding: 2 }}
+        >
+        <div className="backdrop-blur-sm backdrop-brightness-50 rounded-2xl p-2">
             <div className="flex flex-col items-center gap-5 p-4">
                 <div style={{transform: `scale(${state ? 1.5 : 2})`, color: "white"}} >
                     {windowtoicon[windowname as keyof typeof windowtoicon]} 
                 </div>
             </div>
         </div>
+        </ElectricBorder> 
         </Link>
     )
 }
