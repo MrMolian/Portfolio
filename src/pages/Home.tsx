@@ -6,7 +6,9 @@ export function Home() {
     return (
         <Background>
             <NavBar activeWindow="home"/>
-            <AsciiText text="Home" />
+            <div className="flex items-center justify-center h-screen w-screen">
+                <AsciiText text="Home" />
+            </div>
         </Background>
     );
 }
