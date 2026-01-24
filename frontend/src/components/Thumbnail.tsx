@@ -1,11 +1,23 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 interface ThumbnailProps {
-    name: string,
-    redirection: string
+    name: string;
+    thumbnail: string;
+    redirection: string;
 }
-export default function Thumbnail({name, redirection}: ThumbnailProps){
-    return <Link to={redirection}>
-            <p>{name}</p>
+export default function Thumbnail({
+    name,
+    thumbnail,
+    redirection,
+}: ThumbnailProps) {
+    console.log(thumbnail)
+    return (
+        <Link to={redirection}>
+            <div
+                className={`bg-[url(/thumbnail.jpeg)] rounded-4xl bg-center w-100 h-50 flex justify-center items-center`}
+            >
+                <h1>{name}</h1>
+            </div>
         </Link>
+    );
 }

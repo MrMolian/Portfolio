@@ -2,6 +2,7 @@ import { DECOY_PROJECT, DECOY_PROJECTS } from "../constants/ApiConstants";
 
 interface FetchProjectsOutput {
     name: string;
+    thumbnail: string,
     id: string;
 }
 interface FetchProjectInfoOutput {
