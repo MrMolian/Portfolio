@@ -1,17 +1,17 @@
-import axios from "axios";
-import { BASE_URL } from "../constants/ApiConstants";
+import { DECOY_PROJECT, DECOY_PROJECTS } from "../constants/ApiConstants";
 
-interface ProjectInfo {
+interface FetchProjectsOutput {
     name: string;
     id: string;
 }
+interface FetchProjectInfoOutput {
+    name: string;
+    description: string;
+}
 
-export function FetchProjects() {
-    return axios
-        .get<ProjectInfo[]>(BASE_URL + "/projects")
-        .then((res) => res.data)
-        .catch((error) => {
-            console.error(error);
-            return [];
-        });
+export function FetchProjects(): FetchProjectsOutput[] {
+    return DECOY_PROJECTS;
+}
+export function FetchProjectInfo(id: string): FetchProjectInfoOutput {
+    return DECOY_PROJECT[id as keyof typeof DECOY_PROJECT];
 }
