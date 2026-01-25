@@ -5,7 +5,7 @@ export default function Projects() {
     let Projects = FetchProjects();
     return (
         <>
-            <div className="fixed left-1/2 top-5 -translate-x-1/2 ">
+            <div className="fixed left-1/2 top-5 -translate-x-1/2 w-[80vw] max-w-8xl ">
                 {/*Layout*/}
                 <div className="grid grid-cols-2 gap-5  ">
                     {/*Layout*/}

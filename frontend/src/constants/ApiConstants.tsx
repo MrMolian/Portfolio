@@ -3,6 +3,7 @@ export const DECOY_PROJECTS = [
     { name: "Overblend", thumbnail: "/defaultthumbnail.jpeg",id: "overblend" },
     { name: "Tukko", thumbnail: "/defaultthumbnail.jpeg",id: "tukko" },
     { name: "Brainrots", thumbnail: "/defaultthumbnail.jpeg",id: "brainrots" },
+    { name: "Overblend", thumbnail: "/defaultthumbnail.jpeg",id: "overblend" },
 ];
 export const DECOY_PROJECT = {
     overblend: { name: "Overblend", description: "poop" },

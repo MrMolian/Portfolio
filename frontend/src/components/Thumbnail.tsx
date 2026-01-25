@@ -10,11 +10,11 @@ export default function Thumbnail({
     thumbnail,
     redirection,
 }: ThumbnailProps) {
-    console.log(thumbnail)
+    console.log(thumbnail);
     return (
         <Link to={redirection}>
             <div
-                className={`bg-[url(/thumbnail.jpeg)] rounded-4xl bg-center w-100 h-50 flex justify-center items-center`}
+                className={`bg-[url(/thumbnail.jpeg)] rounded-4xl bg-center w-full aspect-video flex justify-center items-center`}
             >
                 <h1>{name}</h1>
             </div>
