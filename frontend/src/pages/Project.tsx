@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import { FetchProjectInfo } from "../api/Projects";
 
 export default function Project() {
-    const { id } = useParams();
+    const { id } = useParams(); 
     
     if (!id) {
         return <div>Project ID is missing</div>; 
