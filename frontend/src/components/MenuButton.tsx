@@ -8,7 +8,7 @@ export function MenuButton({ name, redirection }: MenuButtonProps) {
     return (
             <NavLink to={redirection}>
                 <div className="bg-amber-400 w-full h-full place-content-center">
-                    <p> Salut </p>
+                    <p> {name}</p>
                 </div>
             </NavLink>
     );
