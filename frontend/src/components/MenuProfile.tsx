@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import MoaadB from "../assets/moaadb.jpg";
-import { ArrowRight } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { motion } from "framer-motion";
 function ProfilePicture() {
     const [hovered, setHovered] = useState(false);
@@ -24,7 +24,7 @@ function ProfilePicture() {
                         animate={{ opacity: 1 }}
                         className="absolute z-1 top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
                     >
-                        <ArrowRight
+                        <ArrowLeft
                             size={100}
                             color="white"
                             className="transition duration-1000 opacity-50  hover:opacity-100 hover:scale-150    "
