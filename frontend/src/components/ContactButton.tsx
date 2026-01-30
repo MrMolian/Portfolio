@@ -1,13 +1,13 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import { ArrowUp } from "lucide-react";
-import dollarBill from "../assets/spinning_galaxy.gif";
+import { ArrowRight} from "lucide-react";
+import dollarBill from "../assets/mail.png";
 
-export function ProjectsButton() {
+export function ContactButton() {
     const [hovered, setHovered] = useState(false);
 
     return (
-        <motion.div className="transition hover:drop-shadow-xl hover:drop-shadow-white duration-1000 hover:-translate-y-5 w-full h-full drop-shadow-xl">
+        <motion.div className="transition hover:drop-shadow-xl hover:drop-shadow-white duration-1000 hover:translate-x-5 w-full h-full drop-shadow-xl">
             <motion.div
                 transition={{
                     duration: 1,
@@ -22,8 +22,8 @@ export function ProjectsButton() {
                 }}
                 className=" flex w-full h-full justify-center items-center rounded-xl  "
             >
-                <motion.h1 layout className="drop-shadow-xl italic drop-shadow-black">
-                    PROJECTS
+                <motion.h1 layout className="drop-shadow-xl drop-shadow-black">
+                    Contact
                 </motion.h1>
                 <motion.div layout>
                     <AnimatePresence mode="popLayout">
@@ -43,7 +43,7 @@ export function ProjectsButton() {
                                 }}
                                 className="drop-shadow-xl drop-shadow-black"
                             >
-                                <ArrowUp size={50} />
+                                <ArrowRight size={50} />
                             </motion.div>
                         )}
                     </AnimatePresence>
