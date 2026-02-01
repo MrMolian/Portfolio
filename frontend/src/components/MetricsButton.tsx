@@ -21,7 +21,7 @@ export function MetricsButton() {
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                 }}
-                className=" flex w-full h-full justify-center items-center rounded-xl  "
+                className=" flex w-full h-full border transition duration-1000 grayscale hover:grayscale-0 justify-center items-center rounded-xl  "
             >
                 <motion.div className="drop-shadow-xl drop-shadow-black" layout>
                     <Landmark size={50} />

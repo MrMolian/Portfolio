@@ -7,7 +7,7 @@ export function ProjectsButton() {
     const [hovered, setHovered] = useState(false);
 
     return (
-        <motion.div className="transition hover:drop-shadow-xl hover:drop-shadow-white duration-1000 hover:-translate-y-5 w-full h-full drop-shadow-xl">
+        <motion.div className="transition border rounded-2xl  grayscale hover:grayscale-0 hover:-translate-y-5 duration-1000 w-full h-full drop-shadow-xl">
             <motion.div
                 transition={{
                     duration: 1,
@@ -20,34 +20,11 @@ export function ProjectsButton() {
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                 }}
-                className=" flex w-full h-full justify-center items-center rounded-xl  "
+                className=" flex w-full h-full justify-center p-5 items-center rounded-xl  "
             >
                 <motion.h1 layout className="drop-shadow-xl italic drop-shadow-black">
                     PROJECTS
                 </motion.h1>
-                <motion.div layout>
-                    <AnimatePresence mode="popLayout">
-                        {hovered && (
-                            <motion.div
-                                initial={{
-                                    opacity: 0,
-                                }}
-                                animate={{
-                                    opacity: 1,
-                                }}
-                                exit={{
-                                    opacity: 0,
-                                }}
-                                transition={{
-                                    duration: 0.3,
-                                }}
-                                className="drop-shadow-xl drop-shadow-black"
-                            >
-                                <ArrowUp size={50} />
-                            </motion.div>
-                        )}
-                    </AnimatePresence>
-                </motion.div>
             </motion.div>
         </motion.div>
     );

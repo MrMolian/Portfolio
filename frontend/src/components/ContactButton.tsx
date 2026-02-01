@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import { ArrowRight} from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import dollarBill from "../assets/mail.png";
 
 export function ContactButton() {
@@ -20,7 +20,7 @@ export function ContactButton() {
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                 }}
-                className=" flex w-full h-full justify-center items-center rounded-xl  "
+                className=" flex w-full h-full border transition duration-1000 grayscale hover:grayscale-0 justify-center items-center rounded-xl  "
             >
                 <motion.h1 layout className="drop-shadow-xl drop-shadow-black">
                     Contact

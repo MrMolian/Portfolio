@@ -15,16 +15,16 @@ export function MainGrid() {
         <motion.div
             transition={{ duration: 2, ease: "easeInOut" }}
             exit={{ x: x, y: y, opacity: 0, scale: 0.1 }}
-            className="grid grid-cols-2 gap-4"
+            className="grid gap-4 "
         >
             <DirectionHandler
-                style="row-span-3 transition z-10"
-                direction="left"
-            >
-                <NavLink to="aboutme">
-                    <ProfileButton />
-                </NavLink>
-            </DirectionHandler>
+                    style="row-span-3 transition z-10"
+                    direction="left"
+                >
+                    <NavLink to="aboutme">
+                        <ProfileButton />
+                    </NavLink>
+                </DirectionHandler>
             <DirectionHandler
                 style="row-span-2 transition z-10"
                 direction="top"
@@ -59,7 +59,7 @@ export default function Base() {
                 className="p-12 rounded-2xl"
                 layout
             >
-                <AnimatePresence mode="wait">
+                <AnimatePresence >
                     {outlet || <MainGrid key="main-grid" />}
                 </AnimatePresence>
             </motion.div>

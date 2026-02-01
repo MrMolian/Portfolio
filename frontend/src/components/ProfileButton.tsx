@@ -9,7 +9,7 @@ function ProfilePicture() {
         <div
             onMouseEnter={() => setHovered(HandleHover)}
             onMouseLeave={() => setHovered(HandleHover)}
-            className="transition-all duration-1000 relative mask-y-from-95% mask-x-from-95%  backdrop-blur-md hover:scale-105  hover:-translate-x-5 hover:drop-shadow-xl/50 hover:drop-shadow-white-500/50 w-100 h-auto overflow-hidden rounded-3xl"
+            className="transition duration-1000 relative border backdrop-blur-md  hover:-translate-x-5 hover:drop-shadow-xl/50 hover:drop-shadow-white-500/50 w-[15vw] overflow-hidden rounded-3xl"
         >
             {hovered && (
                 <motion.div
@@ -25,7 +25,7 @@ function ProfilePicture() {
                 </motion.div>
             )}
             <img
-                className="transition duration-1000 grayscale hover:grayscale-0"
+                className="transition w-[15vw] duration-1000 grayscale hover:grayscale-0"
                 src={MoaadB}
             />
         </div>
