@@ -1,18 +1,26 @@
+import Snowfall from "react-snowfall";
 import "./App.css";
-import Base from "./pages/Base";
-import Projects from "./pages/Projects";
-import Contact from "./pages/Contact"
-import { Route, Routes } from "react-router-dom";
+import Countdown from "./components/Countdown";
+import Gift from "./components/Gift";
+import { motion } from "framer-motion";
 
 function App() {
     return (
-        <Routes>
-            <Route path="/" element={<Base />}>
-                <Route path="/projects" element={<Projects />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="*" element={<Projects />} />
-            </Route>
-        </Routes>
+        <>
+            <div className="fixed inset-0 bg-black flex text-center items-center justify-center ">
+                <Snowfall />
+                <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    whileHover={{scale:1.02}}
+                    transition={{ duration: 2 }}
+                    className="flex flex-col select-none gap-5 items-center"
+                >
+                    <Gift />
+                    <Countdown />
+                </motion.div>
+            </div>
+        </>
     );
 }
 
