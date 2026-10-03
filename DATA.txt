@@ -1,0 +1,17 @@
+name : Moaad
+surname : Barkache
+date of birth : 11/09/2006
+Who I am : Belgian Tech Entrepeneur, CoFounder of OsClay & Physicist
+Biography : Just put a random placeholder text while I write something
+Projects : 
+	Each project has a name, logo, date of start and date of end or CURRENT and a website link
+        Also, most importantly, for the project main body content, render a markdown file which I can edit myself project codebase wise any time I want to, to not have to worry about html css renderign and etc, just make sure it suports markdown links images & etc you get it.
+        - Fro the list of projects : 
+        	1. OsClay.com (do your research, its mine)
+        	and nothing else for nwo.
+Socials :
+	- Instagram : @baba_momo911
+	- Linkedin : https://www.linkedin.com/in/moaad-barkache
+	- Youtube : @MrMolian
+	- X : moaadontop
+
